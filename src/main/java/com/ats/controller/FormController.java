@@ -23,7 +23,7 @@ public class FormController {
 	@RequestMapping(value = "/", method=RequestMethod.GET)
 	public String loadForm(Model model) {
 		model.addAttribute("citizen",new CitizenEntity());
-		model.addAttribute("states",stateService.getStatesMap());
+		model.addAttribute("states",stateService.getStatesMap())
 		return "ssaForm";
 	}//loadForm
 	
